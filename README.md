@@ -89,6 +89,7 @@ Any references to game data are for research and preservation purposes only.
 
 No original server code is available. Any reconstruction effort is based entirely on client-side data and reverse engineering.
 
+If you are interested in contributing, please join this Discord server: https://discord.gg/aEhUVBnSzH and share what you want to work on.
 ---
 
 ## Credits
