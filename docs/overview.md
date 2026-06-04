@@ -1,334 +1,193 @@
-# Horse Star - System Reconstruction Overview
+# Horse Star - Asset Bundle Analysis Findings
 
-## Project Context
+## Overview
 
-Horse Star (Mindscape, 2010) was an online Unity-based MMO that never left beta. The game relied heavily on client-side asset bundles and dynamically generated configuration files. No official server or source code is currently available.
+This document consolidates all findings from analyzing Horse Star's `.unity3d` asset bundles. Everything here comes from real data - bundle binaries and DLL analysis - not guesswork.
 
-This document brings together all current reverse engineering findings into one clear technical reference.
-
----
-
-## High-Level System Architecture
-
-The game is built around three core systems:
-
-1. Asset Bundles (.unity3d)
-2. Configuration Files (Build_infos)
-3. Runtime Loading Logic (from Assembly-CSharp.dll)
-
-All runtime behavior comes from how these systems interact.
+**Current progress:** around 110 of roughly 1087 bundles analyzed.
 
 ---
 
-## Configuration System
+## Bundle Format
 
-### The Three Core Files
+All recovered bundles share the same format:
 
-| File                       | Role                                | Format |
-| -------------------------- | ----------------------------------- | ------ |
-| Build_infos.xml            | Original authored manifest          | XML    |
-| Build_infos_generated.xml  | Runtime-generated version           | XML    |
-| Build_infos_generated.picf | Compressed version of generated XML | zlib   |
-
-All three use the exact same structure.
+- **Container:** `UnityWeb` (LZMA compressed)
+- **Unity version:** `3.1.0f4`
+- **Header size:** 56 bytes (0x38)
+- **Compression:** LZMA1 (standard Python `lzma` module)
 
 ---
 
-### .picf Format
+The header fields (all big-endian, after the two null-terminated version strings):
 
-* Standard zlib compression (Ionic.Zlib)
-* No encryption
-* Direct compression of XML content
-
-**Conclusion:** This format is fully reproducible.
-
----
-
-## XML Structure
-
-Root structure:
-
-```xml
-<build_infos>
-  <asset_bundle_infos>
-  <built_in_scenes>
-  <minimap_infos>
-</build_infos>
-```
+| Offset | Field | Notes |
+|--------|-------|-------|
+| +0 | `file_size` (u32) | Total uncompressed size |
+| +4 | `header_size` (u32) | Always 0x38 = 56 |
+| +8 | `unk1` (u32) | Always 1 |
+| +12 | `file_count` (u32) | Number of assets in bundle |
+| +16 | `compressed_size` (u32) | LZMA stream size |
+| +20 | `uncompressed_size` (u32) | Decompressed size |
 
 ---
 
-### Asset Bundle Containers
+## Bundle Categories
 
-Each bundle is defined like this:
+### WORLD_CHUNK - Terrain Scene Bundles
 
-```xml
-<asset_bundle_info_container id="...">
-  <unityPath>...</unityPath>
-  <md5>...</md5>
-  <size>...</size>
-  <priority>0</priority>
-  <isAssetContainer>true/false</isAssetContainer>
-  <containsScene>true/false</containsScene>
+Named `camargue_X_Y.unity3d`. Each contains one Unity scene.
 
-  <asset_bundle_info name="...">
-    <sceneName>...</sceneName>
-    <container>...</container>
-  </asset_bundle_info>
-</asset_bundle_info_container>
-```
+- `containsScene = true`
+- `isAssetContainer = false`
+- `containsTerrain = true`
+- Internal scene name follows the `camargue_X_Y_subX_subY` pattern
+- Adjacent chunks may share the same `sceneName`
+
+Note: the `sceneName` in the XML is the internal Unity level name, not the bundle filename. These are different values. See the system overview for the full mapping table.
+
+Contents include: terrain geometry, collision meshes (`DLT_coll_*`), audio emitters (`DLT_SND_*`), GameObjects, LOD meshes, and POI localization keys.
 
 ---
 
-## Asset Bundle System
+### TERRAIN_TEX - Terrain Texture Packs
 
-### Two Types of Bundles
+Named using the bundle's own MD5 hash as the filename.
 
-Each world chunk uses two bundle types:
+- `containsScene = false`
+- `isAssetContainer = true`
+- `assetBundleInfoLink` points to the paired geometry bundle
 
-1. Geometry bundle
+One texture bundle per world chunk. Contains terrain splat textures (Texture2D assets) for the paired geometry bundle's terrain renderer.
 
-   * camargue_X_Y.unity3d
-   * Contains terrain, colliders, objects, audio
+**Confirmed pairings so far:**
 
-2. Texture bundle
-
-   * Named using its MD5 hash
-   * Contains terrain splat textures
-   * Links back using `assetBundleInfoLink`
-
----
-
-## World System
-
-### Naming Formula
-
-From DLL analysis:
-
-```
-camargue_<X>_<Y>_<subX>_<subY>
-```
-
-Where:
-
-* Grid size = 512 units
-* X, Y = world grid coordinates
-* subX, subY = subdivisions within the grid
+| Geometry bundle | Texture bundle (hash) |
+|-----------------|----------------------|
+| `camargue_0_5` | `077b4143ea30c794ca0194f755f28174` |
+| `camargue_2_0` | `20cba32e9e550ad48850b10c44867f16` |
+| `camargue_5_1` | `da6d3e6bad071dc4d89da074a72573b4` |
+| (see catalog for full list) | |
 
 ---
 
-### Important Discovery
+### QUEST_SCENE - Quest and Dialog Scenes
 
-**sceneName is not the same as the bundle name**
+Named `Sc_DLT_Q#####_A.unity3d` or `Sc_DLT_Q#####_B.unity3d`.
 
-Example:
+- `containsScene = true`
+- `isAssetContainer = false`
+- Contain complete gameplay geometry and logic
 
-| Bundle Name  | sceneName           |
-| ------------ | ------------------- |
-| camargue_0_4 | camargue_0_5_0_1024 |
-| camargue_2_0 | camargue_1_3_512_0  |
+Confirmed contents from binary analysis:
 
-What this means:
+- `HorseSpawner` objects
+- Race paths `_path01` through `_path09`
+- Obstacle objects with dimension metadata (e.g. `_Obstacle01_400_40_100`)
+- Trigger chains (`_CSO_Chain_trigger_01`, `_02`)
+- Barrier geometry (`_wallGauche`, `_wallDroite`, `_barriere`)
 
-* bundle name = streaming grid cell
-* sceneName = actual Unity scene being loaded
-
----
-
-### Terrain Pairing
-
-Each chunk has:
-
-* Geometry bundle --> containsScene = true
-* Texture bundle --> isAssetContainer = true
-
-These must be linked together in the XML.
+Quest scenes are complete and functional, not stubs or placeholders.
 
 ---
 
-## Quest and Scene Data
+### CHAR_ANIM - Character Skeletons and Rigs
 
-Quest bundles contain full gameplay structures:
+The core character bundles. These are among the largest files in the set.
 
-* HorseSpawner
-* obstacle systems
-* race paths (_path01 - _path09)
-* trigger zones
+| Bundle | Content | Compressed size |
+|--------|---------|-----------------|
+| `2c81c468...` | Horse full rig + 61 animation clips | 5.3 MB |
+| `04bc26f6...` | Female rider (Adulte_F) full biped skeleton | 584 KB |
+| `0a9fe77f...` | Palefrenier (stable hand) rig | 500 KB |
+| `3ed484fa...` | NPC_PecheurVieux (old fisherman) | 506 KB |
+| `3f69468a...` | NPC_Instructeur_1 (riding instructor) | 476 KB |
+| `2fbeb84d...` | Palefrenier_Bip alternate rig | 472 KB |
+| `3e8be2e7...` | Palefrenier + Vendeur1 NPC pair | 14 KB |
+| `0fc35c45...` | Adulte_F skeleton stub | 10 KB |
 
-These are complete scenes, not placeholders.
+**Horse animation clips confirmed in `2c81c468...`:**
 
----
+Locomotion: `IDLE_RESPIRATION`, `PAS1_D`, `PAS2_D`, `PAS3_D`, `TROT1_D`, `TROT2_D`, `TROT3_D`, `GALOP1_D`, `GALOP2_D`, `GALOP3_D`
 
-## World Content Findings
+Jumping: `GRAND_SAUT`, `PETIT_SAUT`
 
-### POI System
+Behaviour: `AGGRESSIF`, `ENERVE_COUP_SABOT` (angry hoof kick), `SECOUER_TETE` (head shake)
 
-Confirmed format:
+Grooming: `SABOT_AV_G_LEVER` (lift front-left hoof) and equivalents for all four hooves
 
-```
-HorseStar|POI_names|POI_<name>
-```
-
-Example:
-
-* POI_plage_orestan (Orestan Beach)
-
----
-
-### Audio System
-
-Pattern:
-
-```
-DLT_SND_<X>_<Y>_<subX>_<subY>_<type>
-```
-
-Examples include:
-
-* forest bird sounds
-* river ambience
+61 clips total.
 
 ---
 
-### Collision System
+### AVATAR_ASSET / HORSE_ASSET - Character Equipment
 
-Pattern:
+Rider clothing and horse equipment bundles. Named with `AVT_*` or `CHV_*` prefixes in their internal content.
 
-```
-DLT_coll_<X>_<Y>_<subX>_<subY>_<index>
-```
+Confirmed items found so far:
 
----
+- `AVT_F_Buste_Tshirt2_Bras2_Type01_A` - female T-shirt variant
+- `AVT_F_Buste_Polo_Bras2_Type01_A` - female polo shirt
+- `AVT_M_Buste_Chemise_Bras2_Type01_A` - male dress shirt
 
-## Asset Categories
-
-From DLL string analysis:
-
-### Avatar Bundles
-
-* AVT_* --> clothing, body parts, accessories
-
-### Horse Bundles
-
-* CHV_* --> horse models, gear, textures
-
-### Rider Configuration
-
-* RIDER_MALE_*, RIDER_FEMALE_*
-
-### Shop Bundles
-
-* SHOP_*
-
-### Dialog Data
-
-* EN_Dialogs.txt, FR_Dialogs.txt, etc.
+The full set of known bundle IDs from DLL string analysis is documented in the system overview.
 
 ---
 
-## Built-in Scenes
+### WORLD_PROP - Environment Props
 
-These are loaded directly (not from asset bundles):
+Standalone mesh bundles for world decoration. These are streamed alongside terrain chunks.
 
-* Sc_MainScene
-* Sc_Login
-* Sc_HorseCreation
-* Sc_AvatarCreation
-* Sc_Ecurie
-* Sc_Pansage
+Confirmed props found so far:
 
----
+**Flora:** `pin_alep_01` (Aleppo pine), `Peuplier_Blanc_01` (white poplar), `massette_02` (cattail), `pres_sale_02` (salt marsh), `Oyat_groupe_1` (marram grass), `Lis_Maritime` (sea lily), `bamboos04`, `verseau01`, `Grass_Lotier_01`, `rock_compo_01`
 
-## Minimap System
-
-* Naming follows: camargue_X_Y
-* Uses zoom values and GUID references
-
-Texture paths:
-
-* /Textures/Minimap/
-* /Minimap/
+**Built environment:** `Mur01` (stone wall), `Camepement_tente_01` (campsite tent)
 
 ---
 
-## Data Sources
+### PROP_MESH - General Props
 
-### Confirmed Sources
+Smaller prop bundles for specific objects.
 
-* Asset bundles (.unity3d files)
-* Assembly-CSharp.dll
-* Local cache files (MD5s.xml)
-* Old installation directories
+Confirmed: `barriere_poteau_double` (double-post fence), `passerelle_elevation` (raised walkway), `passerelle_45_Barriere` (angled fence bridge), `voiture_rouge` (red car), `Vespa` (scooter), `flacon_shampooing` (shampoo bottle, stable prop), `chicore_tige` (chicory stem), `Pelle_sot_00` (shovel)
 
 ---
 
-### Historical CDN
+### LD_BUNDLE - Level Design Prefabs
 
-Hardcoded URL:
+Obstacle course prefabs used by quest scenes.
 
-```
-http://assets01.horsestar.net/r12/
-```
+Confirmed: `LD_Gabarit_Obstacle_250_145_60`, `LD_Gabarit_Obstacle_400_110_60`
 
-Likely bundle path:
-
-```
-AssetBundleContents/<bundle>.unity3d
-```
+The naming format `LD_Gabarit_Obstacle_<length>_<height>_<width>` gives the physical dimensions of each obstacle in the racing system.
 
 ---
 
-## Current Project State
+### MATERIAL_STUB - Tiny Dependency Bundles
 
-* 1000+ asset bundles available
-* ~90 analyzed so far
-* Full schema recovered
+Very small bundles (under roughly 3KB) containing only a material reference. These are loaded as dependencies of larger mesh bundles, allowing the engine to share materials across multiple assets.
+
+These do not need their own top-level `asset_bundle_info_container` entry. They are referenced via `asset_bundle_dependency` inside their parent bundle's entry.
 
 ---
 
-## What Is Still Missing
+### AUDIO
 
-| Element              | Status     |
-| -------------------- | ---------- |
-| Full bundle analysis | Incomplete |
-| unityPath values     | Unknown    |
-| Dependency graph     | Incomplete |
-| Object GUIDs         | Missing    |
-| Minimap GUIDs        | Missing    |
-| Full grid size       | Unknown    |
+Audio bundles confirmed in the dataset. Naming pattern suggests ambient audio is keyed to terrain coordinates using the same `DLT_SND_X_Y_subX_subY` coordinate system as the world chunks.
+
+---
+
+## World Map Coverage (as of batch 6)
+
+Terrain chunks confirmed so far cover columns 0-18 and rows 0-8.
+
+This suggests a world grid of roughly 19 x 9 = 171 terrain chunks minimum, each with a paired texture bundle. That would be around 342 world-related bundles out of 1087 total. The remaining bundles cover character assets, props, audio, dialog, UI, and other game content.
 
 ---
 
 ## Key Insight
 
-This is not a data loss problem.
+The asset data is intact. The bundles decompress cleanly, internal geometry is present, animation data is complete, and quest scenes are fully structured. The only missing piece is the configuration manifest that tells the engine what exists.
 
-> The data exists. It just needs to be processed.
-
----
-
-## Reconstruction Feasibility
-
-This is fully achievable with:
-
-* Complete bundle processing
-* XML reconstruction
-* Dependency mapping
-
-No encryption or server-only logic has been identified so far.
-
----
-
-## Contribution Focus Areas
-
-* Bundle analysis (remaining files)
-* Tooling for automated extraction
-* XML reconstruction
-* Dependency mapping
-* Unity 3.x asset pipeline knowledge
-
----
-
-## Final Note
-
-The system itself is understood. What remains now is execution.
+Once bundle analysis is complete, generating `Build_infos.xml` is a straightforward process: go through every bundle, compute its MD5 and size, extract its internal name and scene reference, and write the XML entry.
