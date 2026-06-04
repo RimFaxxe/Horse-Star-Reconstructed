@@ -1,0 +1,999 @@
+{
+  "01a23459af6fd6c40a314112a3803f46.unity3d": {
+    "md5": "94ed8dff4b0b081ff877041f9d878919",
+    "size": 74250,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_2_3\u000e",
+    "assets": [
+      "CustomAssetBundle-01a23459af6fd6c40a314112a3803f46"
+    ]
+  },
+  "01a988cdf9c82bd45a42989155f488f6.unity3d": {
+    "md5": "cf399ef4166064dfa94b861785a356d0",
+    "size": 17608,
+    "cat": "PROP_MESH",
+    "detail": "mesh_Barriere01",
+    "assets": [
+      "CustomAssetBundle-01a988cdf9c82bd45a42989155f488f6"
+    ]
+  },
+  "01dfcef492e1f9141aa114e3c5f5e48b.unity3d": {
+    "md5": "8697d11e2f2eca44f29a2856b3230210",
+    "size": 31745,
+    "cat": "AVATAR_ASSET",
+    "detail": "AVT_F_Buste_Tshirt2_Bras2_Type01_A",
+    "assets": [
+      "CustomAssetBundle-01dfcef492e1f9141aa114e3c5f5e48b"
+    ]
+  },
+  "01f2aa9eff3bbbc4db57ca1403802934.unity3d": {
+    "md5": "8ea150aa94f9b48694f0b7874011d87e",
+    "size": 854,
+    "cat": "MATERIAL_STUB",
+    "detail": "female_rider_hr-material #33",
+    "assets": [
+      "CustomAssetBundle-01f2aa9eff3bbbc4db57ca1403802934"
+    ]
+  },
+  "077b4143ea30c794ca0194f755f28174.unity3d": {
+    "md5": "3b5a73d22b5cef439f8e932858e7df4e",
+    "size": 85815,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_0_5\u0006",
+    "assets": [
+      "CustomAssetBundle-077b4143ea30c794ca0194f755f28174"
+    ]
+  },
+  "0a0e95632aee9c04590e12c3b5ac2c70.unity3d": {
+    "md5": "6f3a1348cb1c360ac707e22836226839",
+    "size": 46623,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_9_1\u0000",
+    "assets": [
+      "CustomAssetBundle-0a0e95632aee9c04590e12c3b5ac2c70"
+    ]
+  },
+  "0a22ae61f7d20d444aa34d767d630a08.unity3d": {
+    "md5": "20dbbe355d1df1b274338345dbffd524",
+    "size": 24745,
+    "cat": "PROP_MESH",
+    "detail": "Object05",
+    "assets": [
+      "CustomAssetBundle-0a22ae61f7d20d444aa34d767d630a08"
+    ]
+  },
+  "0a4ac507632e1c944ac4523b30728125.unity3d": {
+    "md5": "65b8b397c8df47324dc9d0078ea317a6",
+    "size": 3692,
+    "cat": "PROP_MESH",
+    "detail": "Object145",
+    "assets": [
+      "CustomAssetBundle-0a4ac507632e1c944ac4523b30728125"
+    ]
+  },
+  "0a69831f71533ad4399e7610672c8906.unity3d": {
+    "md5": "9c1543e47ed7f79ff81b7ee4dbd8fcc9",
+    "size": 855,
+    "cat": "MATERIAL_STUB",
+    "detail": "female_rider_hr-standard_15",
+    "assets": [
+      "CustomAssetBundle-0a69831f71533ad4399e7610672c8906"
+    ]
+  },
+  "0a9b9b2ed6a4fc145976a021099a4ea1.unity3d": {
+    "md5": "9f4c8f64bd1e213866fe8210c5d950db",
+    "size": 5408,
+    "cat": "PROP_MESH",
+    "detail": "chicore_tige",
+    "assets": [
+      "CustomAssetBundle-0a9b9b2ed6a4fc145976a021099a4ea1"
+    ]
+  },
+  "0a9fe77fe50fbdc48be60a55c4af6163.unity3d": {
+    "md5": "0ab31e28d0cf001319af2baebb3fe118",
+    "size": 500502,
+    "cat": "CHAR_ANIM",
+    "detail": "Palefrenier (stable NPC)",
+    "assets": [
+      "CustomAssetBundle-0a9fe77fe50fbdc48be60a55c4af6163"
+    ]
+  },
+  "0aaec62a2ef193b4d9651a6e5e046cfe.unity3d": {
+    "md5": "c37b85bb4a46f3c32527ee636cae063b",
+    "size": 1643,
+    "cat": "UI_TEXTURE",
+    "detail": "FlechesIndirect",
+    "assets": [
+      "CustomAssetBundle-0aaec62a2ef193b4d9651a6e5e046cfe"
+    ]
+  },
+  "0ad46907a99b5a34cb1d3436fe0fd7cc.unity3d": {
+    "md5": "9ede990660f01b86852047fac9e21674",
+    "size": 117923,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_18_0\u0000",
+    "assets": [
+      "CustomAssetBundle-0ad46907a99b5a34cb1d3436fe0fd7cc"
+    ]
+  },
+  "0aeccfb43a2200f4683b7c20d8d3e72e.unity3d": {
+    "md5": "c38c564b4510e6c1bbbca88f7407f7db",
+    "size": 898,
+    "cat": "MATERIAL_STUB",
+    "detail": "male_rider_hr-material #332",
+    "assets": [
+      "CustomAssetBundle-0aeccfb43a2200f4683b7c20d8d3e72e"
+    ]
+  },
+  "0b3058f8dd7f45d45b3a5b3327f330e7.unity3d": {
+    "md5": "73d24d41a03bdcf5c5d62dea035848e3",
+    "size": 2008,
+    "cat": "LD_BUNDLE",
+    "detail": "LD_Gabarit_Obstacle_250_145_60",
+    "assets": [
+      "CustomAssetBundle-0b3058f8dd7f45d45b3a5b3327f330e7"
+    ]
+  },
+  "0b82a2e4592a78849a6303d3fbbc03b2.unity3d": {
+    "md5": "ffe0931ef3d0317f570954d949f98a43",
+    "size": 146002,
+    "cat": "PROP_MESH",
+    "detail": "flacon_shampooing / etale_nourriture (stable props)",
+    "assets": [
+      "CustomAssetBundle-0b82a2e4592a78849a6303d3fbbc03b2"
+    ]
+  },
+  "0bfcf63c41c91a24f9095db09d62b9ad.unity3d": {
+    "md5": "58fe5345d2480fdce79bf75fc8e3d4fd",
+    "size": 2089,
+    "cat": "PROP_MESH",
+    "detail": "passerelle_elevation",
+    "assets": [
+      "CustomAssetBundle-0bfcf63c41c91a24f9095db09d62b9ad"
+    ]
+  },
+  "0c32afe21768a1944998d9f3b1344df1.unity3d": {
+    "md5": "9a9e59fef115613b6402555fd66452d1",
+    "size": 81985,
+    "cat": "WORLD_PROP",
+    "detail": "massette_02 (cattail / marsh plant)",
+    "assets": [
+      "CustomAssetBundle-0c32afe21768a1944998d9f3b1344df1"
+    ]
+  },
+  "0c50b7948164ab14395b91e02b5753a3.unity3d": {
+    "md5": "e79e2f5940f26c57522e3f0acb04c5b3",
+    "size": 2003,
+    "cat": "LD_BUNDLE",
+    "detail": "LD_Gabarit_Obstacle_400_110_60",
+    "assets": [
+      "CustomAssetBundle-0c50b7948164ab14395b91e02b5753a3"
+    ]
+  },
+  "0d05154f2ec521040bd5c2d80cc6088e.unity3d": {
+    "md5": "36429d650487ce316718a8376c64bf96",
+    "size": 86159,
+    "cat": "WORLD_PROP",
+    "detail": "Grass_Lotier_01",
+    "assets": [
+      "CustomAssetBundle-0d05154f2ec521040bd5c2d80cc6088e"
+    ]
+  },
+  "0d2b73af7abc3fb49bda2efe28c499c8.unity3d": {
+    "md5": "f695087ad525aaac579287b136349866",
+    "size": 2963,
+    "cat": "PROP_MESH",
+    "detail": "barriere_poteau_double",
+    "assets": [
+      "CustomAssetBundle-0d2b73af7abc3fb49bda2efe28c499c8"
+    ]
+  },
+  "0d52d829e5b04eb44ba8538ede323bcd.unity3d": {
+    "md5": "6c09b053ce6fbaf8af6f2b817f3682f4",
+    "size": 150310,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_1_4\b",
+    "assets": [
+      "CustomAssetBundle-0d52d829e5b04eb44ba8538ede323bcd"
+    ]
+  },
+  "0e2c951b17d2c824e86feb92d91d210f.unity3d": {
+    "md5": "98762daeadc4a35b77fdf3ddb6785e24",
+    "size": 348631,
+    "cat": "TEXTURE",
+    "detail": "roche_nuit_D (night rock texture)",
+    "assets": [
+      "CustomAssetBundle-0e2c951b17d2c824e86feb92d91d210f"
+    ]
+  },
+  "0ea6e1cc389bf8a43b101b6b9952ef6c.unity3d": {
+    "md5": "c15e8486b85c2d5a04948ec35521663b",
+    "size": 156948,
+    "cat": "VFX",
+    "detail": "rocher_torche (torch rock particle)",
+    "assets": [
+      "CustomAssetBundle-0ea6e1cc389bf8a43b101b6b9952ef6c"
+    ]
+  },
+  "0eff3b1558f1b6144b43cb24d1bcf331.unity3d": {
+    "md5": "9aaac80602a9d9db0e09c122a21a59bc",
+    "size": 1019,
+    "cat": "MATERIAL_STUB",
+    "detail": "fresne_leaves",
+    "assets": [
+      "CustomAssetBundle-0eff3b1558f1b6144b43cb24d1bcf331"
+    ]
+  },
+  "0f01fc5a9c7ece34a8136a301953c883.unity3d": {
+    "md5": "82f83612254dc1ae6b14d24bbb07654b",
+    "size": 40662,
+    "cat": "WORLD_PROP",
+    "detail": "bamboos04 / Bambous_tunnel",
+    "assets": [
+      "CustomAssetBundle-0f01fc5a9c7ece34a8136a301953c883"
+    ]
+  },
+  "0f5aac8e84a9cd944a9fe881f4b04564.unity3d": {
+    "md5": "e839ca3003c5a83738cbb5af09d4cce8",
+    "size": 153864,
+    "cat": "WORLD_PROP",
+    "detail": "verseau01",
+    "assets": [
+      "CustomAssetBundle-0f5aac8e84a9cd944a9fe881f4b04564"
+    ]
+  },
+  "0fc35c459aac2e5458104df76dcce06d.unity3d": {
+    "md5": "2fa1a60e6e650450f69cd5a97211c447",
+    "size": 10223,
+    "cat": "CHAR_ANIM",
+    "detail": "Adulte_F skeleton/rig",
+    "assets": [
+      "CustomAssetBundle-0fc35c459aac2e5458104df76dcce06d"
+    ]
+  },
+  "1a3ea7f499b731245afc42e04f3257d5.unity3d": {
+    "md5": "90d50338c9a2923fe10f8d2078a1466f",
+    "size": 121191,
+    "cat": "WORLD_PROP",
+    "detail": "Mur01 (wall)",
+    "assets": [
+      "CustomAssetBundle-1a3ea7f499b731245afc42e04f3257d5"
+    ]
+  },
+  "1ac3b9b9ef6ef834193079757ca30050.unity3d": {
+    "md5": "6ce0acaf183d14cbe1a77f3ad136144b",
+    "size": 19263,
+    "cat": "WORLD_PROP",
+    "detail": "Peuplier_Blanc_01 (white poplar tree)",
+    "assets": [
+      "CustomAssetBundle-1ac3b9b9ef6ef834193079757ca30050"
+    ]
+  },
+  "1b52ce754529d774a8b52221de44ce4f.unity3d": {
+    "md5": "8a1622b029d59c43ebcf4d25a346ae8b",
+    "size": 102047,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_11_7\u0000",
+    "assets": [
+      "CustomAssetBundle-1b52ce754529d774a8b52221de44ce4f"
+    ]
+  },
+  "1bb40b453e5286248b32231c1f834eed.unity3d": {
+    "md5": "22416fae2aa9c3efd53910a9c99ae7de",
+    "size": 3117,
+    "cat": "PROP_MESH",
+    "detail": "curseur_jet",
+    "assets": [
+      "CustomAssetBundle-1bb40b453e5286248b32231c1f834eed"
+    ]
+  },
+  "1be76163cccc4394b9891b4493748a47.unity3d": {
+    "md5": "70da6c8b987a33634b03ccb1b7f61f72",
+    "size": 9583,
+    "cat": "WORLD_PROP",
+    "detail": "pres_sale_02 (salt marsh)",
+    "assets": [
+      "CustomAssetBundle-1be76163cccc4394b9891b4493748a47"
+    ]
+  },
+  "1beefea8d0d72524caa69248f58dd336.unity3d": {
+    "md5": "e8afca97620d844053d1e8789b75357b",
+    "size": 190496,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_11_1\u0000",
+    "assets": [
+      "CustomAssetBundle-1beefea8d0d72524caa69248f58dd336"
+    ]
+  },
+  "1c269a38af8a1da46983eec235b46580.unity3d": {
+    "md5": "b4cc14e0603d1178c006ed2c68a51672",
+    "size": 81852,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_3_8\u0000",
+    "assets": [
+      "CustomAssetBundle-1c269a38af8a1da46983eec235b46580"
+    ]
+  },
+  "1ca166f3cee58b64380d6ca3886752bd.unity3d": {
+    "md5": "ae2b5545dbdb76947dfcb1d3331262c7",
+    "size": 1439,
+    "cat": "WORLD_PROP",
+    "detail": "rock_compo_01",
+    "assets": [
+      "CustomAssetBundle-1ca166f3cee58b64380d6ca3886752bd"
+    ]
+  },
+  "1cb21ee2438e2604bbc835a4553062cd.unity3d": {
+    "md5": "f09c1d27b6295e577e7c0add6c653082",
+    "size": 24010,
+    "cat": "WORLD_PROP",
+    "detail": "pin_alep_01 (Aleppo pine tree)",
+    "assets": [
+      "CustomAssetBundle-1cb21ee2438e2604bbc835a4553062cd"
+    ]
+  },
+  "1cb88bb91a2314b42a39372bbf0f9f46.unity3d": {
+    "md5": "dae49b306c2ec2e106b1616581c1ce86",
+    "size": 891,
+    "cat": "MATERIAL_STUB",
+    "detail": "female_rider_hr-material #136",
+    "assets": [
+      "CustomAssetBundle-1cb88bb91a2314b42a39372bbf0f9f46"
+    ]
+  },
+  "1d181c63fab74b2449d14024560ee333.unity3d": {
+    "md5": "62a8214528bd24db358f4f105243b792",
+    "size": 398848,
+    "cat": "PROP_MESH",
+    "detail": "voiture_rouge",
+    "assets": [
+      "CustomAssetBundle-1d181c63fab74b2449d14024560ee333"
+    ]
+  },
+  "1d4d4a30a8d88db4eb8afc2743e2ff3c.unity3d": {
+    "md5": "19ec593a3ab8d6ee8804dd6a5b8e13e0",
+    "size": 154742,
+    "cat": "PROP_MESH",
+    "detail": "Vespa (scooter)",
+    "assets": [
+      "CustomAssetBundle-1d4d4a30a8d88db4eb8afc2743e2ff3c"
+    ]
+  },
+  "1d99a2335a0e9d64e9c417a0455269c6.unity3d": {
+    "md5": "d545d9280a39cad336d576d2a0bf8409",
+    "size": 893,
+    "cat": "MATERIAL_STUB",
+    "detail": "barriere_porte-22",
+    "assets": [
+      "CustomAssetBundle-1d99a2335a0e9d64e9c417a0455269c6"
+    ]
+  },
+  "20cba32e9e550ad48850b10c44867f16.unity3d": {
+    "md5": "2554346a540b04f3c760708670c5fa53",
+    "size": 3686,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_2_0\u0000",
+    "assets": [
+      "CustomAssetBundle-20cba32e9e550ad48850b10c44867f16"
+    ]
+  },
+  "Sc_DLT_Q00010_B.unity3d": {
+    "md5": "dbc1a5a79e665af78bb5cdbb3e271b07",
+    "size": 6438,
+    "cat": "QUEST_SCENE",
+    "detail": "Sc_DLT_Q00010_B",
+    "assets": [
+      "BuildPlayer-Sc_DLT_Q00010_B",
+      "BuildPlayer-Sc_DLT_Q00010_B.sharedAssets"
+    ]
+  },
+  "Sc_DLT_Q00016_A.unity3d": {
+    "md5": "2db7072a8957fe05b6c9c0c684815b3b",
+    "size": 95846,
+    "cat": "QUEST_SCENE",
+    "detail": "Sc_DLT_Q00016_A",
+    "assets": [
+      "BuildPlayer-Sc_DLT_Q00016_A",
+      "BuildPlayer-Sc_DLT_Q00016_A.sharedAssets"
+    ]
+  },
+  "Sc_DLT_Q00023.unity3d": {
+    "md5": "8363b28a20933ac95b94fceb976cda36",
+    "size": 1549,
+    "cat": "QUEST_SCENE",
+    "detail": "Sc_DLT_Q00023",
+    "assets": [
+      "BuildPlayer-Sc_DLT_Q00023",
+      "BuildPlayer-Sc_DLT_Q00023.sharedAssets"
+    ]
+  },
+  "camargue_0_4.unity3d": {
+    "md5": "559aca7f0036b5018dd867c3ea77b3c7",
+    "size": 24358,
+    "cat": "WORLD_CHUNK",
+    "detail": "camargue_0_5_0_1024",
+    "assets": [
+      "BuildPlayer-camargue_0_4",
+      "BuildPlayer-camargue_0_4.sharedAssets"
+    ]
+  },
+  "camargue_0_5.unity3d": {
+    "md5": "66f108c19359adeeb77095207487542f",
+    "size": 25268,
+    "cat": "WORLD_CHUNK",
+    "detail": "camargue_0_5_0_1024",
+    "assets": [
+      "BuildPlayer-camargue_0_5",
+      "BuildPlayer-camargue_0_5.sharedAssets"
+    ]
+  },
+  "camargue_2_0.unity3d": {
+    "md5": "499f8dc22fbbc7a4c9265cf271d03df8",
+    "size": 5014,
+    "cat": "WORLD_CHUNK",
+    "detail": "camargue_1_3_512_0",
+    "assets": [
+      "BuildPlayer-camargue_2_0",
+      "BuildPlayer-camargue_2_0.sharedAssets"
+    ]
+  },
+  "camargue_5_1.unity3d": {
+    "md5": "57a7af89e1d4d467f2c933482748ab12",
+    "size": 4783,
+    "cat": "WORLD_CHUNK",
+    "detail": "camargue_2_3_1024_0",
+    "assets": [
+      "BuildPlayer-camargue_5_1",
+      "BuildPlayer-camargue_5_1.sharedAssets"
+    ]
+  },
+  "da6d3e6bad071dc4d89da074a72573b4.unity3d": {
+    "md5": "4d10702ddd855f3727b228bb7976fa2b",
+    "size": 2046,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_5_1\u0001",
+    "assets": [
+      "CustomAssetBundle-da6d3e6bad071dc4d89da074a72573b4"
+    ]
+  },
+  "02d03d1a27fb5504fadb9c15673d7d7a.unity3d": {
+    "md5": "b6c29c18bf52642fccfc7fc789b82c4f",
+    "size": 48850,
+    "cat": "AVATAR_ASSET",
+    "detail": "AVT_F_Buste_Polo_Bras2_Type01_A",
+    "assets": [
+      "CustomAssetBundle-02d03d1a27fb5504fadb9c15673d7d7a"
+    ]
+  },
+  "02d877d1b38550c4dac19acdded999bb.unity3d": {
+    "md5": "28072e82b3fd724f92da36b658de5c7c",
+    "size": 7769,
+    "cat": "PROP_MESH",
+    "detail": "Passerelle_45_Barriere",
+    "assets": [
+      "CustomAssetBundle-02d877d1b38550c4dac19acdded999bb"
+    ]
+  },
+  "1d971e3e8029beb4689a896617ccb1a3.unity3d": {
+    "md5": "88b0b783e34194faed5b4ba074486793",
+    "size": 7697,
+    "cat": "PROP_MESH",
+    "detail": "Oyat_groupe_1",
+    "assets": [
+      "CustomAssetBundle-1d971e3e8029beb4689a896617ccb1a3"
+    ]
+  },
+  "1db8f49229969d84c80902658c2e3223.unity3d": {
+    "md5": "f0127b3cec4e9a5d76a3defdf08ad717",
+    "size": 18216,
+    "cat": "UNKNOWN",
+    "detail": "",
+    "assets": [
+      "CustomAssetBundle-1db8f49229969d84c80902658c2e3223"
+    ]
+  },
+  "1dd4ccbeeb5d77f42ae27e643c6a70a6.unity3d": {
+    "md5": "b33697aabf5d7f8daaa5db94f5070f65",
+    "size": 110451,
+    "cat": "TEXTURE",
+    "detail": "",
+    "assets": [
+      "CustomAssetBundle-1dd4ccbeeb5d77f42ae27e643c6a70a6"
+    ]
+  },
+  "1de0c25c78944b7438cbad63b14fdffd.unity3d": {
+    "md5": "08ad2883014156630f19cf9b0a8bffc3",
+    "size": 30483,
+    "cat": "PROP_MESH",
+    "detail": "Lis_Maritime",
+    "assets": [
+      "CustomAssetBundle-1de0c25c78944b7438cbad63b14fdffd"
+    ]
+  },
+  "1e324b5ef975f0b478255eeeced4dc46.unity3d": {
+    "md5": "bb2f609206a3f0bfb9b955d9c8b4408b",
+    "size": 37070,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_0_9",
+    "assets": [
+      "CustomAssetBundle-1e324b5ef975f0b478255eeeced4dc46"
+    ]
+  },
+  "1e3990ed82638bd48a79b46b568f54a0.unity3d": {
+    "md5": "8ffe54411b0f63d7a1406a10c3e0f85b",
+    "size": 72781,
+    "cat": "AVATAR_ASSET",
+    "detail": "AVT_M_Buste_Chemise_Bras2_Type01_A",
+    "assets": [
+      "CustomAssetBundle-1e3990ed82638bd48a79b46b568f54a0"
+    ]
+  },
+  "1e99957fc0c825745a022c3ecf74c751.unity3d": {
+    "md5": "f0b11ad28157b2d55ec34695894071a1",
+    "size": 10243,
+    "cat": "PROP_MESH",
+    "detail": "Camepement_tente_01",
+    "assets": [
+      "CustomAssetBundle-1e99957fc0c825745a022c3ecf74c751"
+    ]
+  },
+  "1ea1fb8dcb88ed6458dab835c6f2d7c8.unity3d": {
+    "md5": "b32dc859c542a01d99d55cd18e405331",
+    "size": 82250,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_14_0",
+    "assets": [
+      "CustomAssetBundle-1ea1fb8dcb88ed6458dab835c6f2d7c8"
+    ]
+  },
+  "1eda4b30daf84e34eb670ff19896d2e8.unity3d": {
+    "md5": "e78527eb6a40a0e1b261af1db90b4b14",
+    "size": 56866,
+    "cat": "TEXTURE",
+    "detail": "m_AlphaTex",
+    "assets": [
+      "CustomAssetBundle-1eda4b30daf84e34eb670ff19896d2e8"
+    ]
+  },
+  "1ef0f676ff599c042977cb2d01c76b14.unity3d": {
+    "md5": "ff4197aa3a1443ba3285c23f4706eb00",
+    "size": 34580,
+    "cat": "PROP_MESH",
+    "detail": "Pelle_sot_00",
+    "assets": [
+      "CustomAssetBundle-1ef0f676ff599c042977cb2d01c76b14"
+    ]
+  },
+  "1f2db723581bcdc45b64fa2e07ea0e48.unity3d": {
+    "md5": "7277d5646dbe0ac01ac4176b23fece44",
+    "size": 51349,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_7_6",
+    "assets": [
+      "CustomAssetBundle-1f2db723581bcdc45b64fa2e07ea0e48"
+    ]
+  },
+  "1f4755989f34d1f448446639f87e9650.unity3d": {
+    "md5": "0a9da0a4ee648aa5dcc3a790c42f8772",
+    "size": 2362,
+    "cat": "VFX",
+    "detail": "PPtr<$ParticleEmitter>",
+    "assets": [
+      "CustomAssetBundle-1f4755989f34d1f448446639f87e9650"
+    ]
+  },
+  "1ff5ab975bac5734e930d46c2cf0c1b0.unity3d": {
+    "md5": "000c80ec9cbd3f910214b71b119caa78",
+    "size": 6283,
+    "cat": "PROP_MESH",
+    "detail": "GameObject",
+    "assets": [
+      "CustomAssetBundle-1ff5ab975bac5734e930d46c2cf0c1b0"
+    ]
+  },
+  "2a279f077c7f1dd47b917c71647dd497.unity3d": {
+    "md5": "0167ce554184fb952cb103c8b09da2b0",
+    "size": 1995,
+    "cat": "LD_BUNDLE",
+    "detail": "LD_Gabarit_Obstacle_250_40_60",
+    "assets": [
+      "CustomAssetBundle-2a279f077c7f1dd47b917c71647dd497"
+    ]
+  },
+  "2a2a0bc151823b2469e4a2a997f98024.unity3d": {
+    "md5": "f207844199243db099f227812d9e504a",
+    "size": 3460,
+    "cat": "PROP_MESH",
+    "detail": "Juncusacutusold_08",
+    "assets": [
+      "CustomAssetBundle-2a2a0bc151823b2469e4a2a997f98024"
+    ]
+  },
+  "2a5245aec1b58ce418b7ff48fd81389c.unity3d": {
+    "md5": "58023c85c760dc09b805702167577e6e",
+    "size": 44976,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_17_2",
+    "assets": [
+      "CustomAssetBundle-2a5245aec1b58ce418b7ff48fd81389c"
+    ]
+  },
+  "2aa085569efa3a1479ee6b076a3f8ed8.unity3d": {
+    "md5": "c71b8a7b8a0e593561b487036ecbdab0",
+    "size": 8102,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_17_3",
+    "assets": [
+      "CustomAssetBundle-2aa085569efa3a1479ee6b076a3f8ed8"
+    ]
+  },
+  "2b8c363c9fd5fec4c88c6ced34f6d78c.unity3d": {
+    "md5": "ea9933af01797a7f60d319c766c7051f",
+    "size": 851,
+    "cat": "UNKNOWN",
+    "detail": "",
+    "assets": [
+      "CustomAssetBundle-2b8c363c9fd5fec4c88c6ced34f6d78c"
+    ]
+  },
+  "003f4a98c1b140d4087c4fb3b0fa24ed.unity3d": {
+    "md5": "0291b5f8b322a9b610a655d5b14a646d",
+    "size": 134572,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_10_7",
+    "assets": [
+      "CustomAssetBundle-003f4a98c1b140d4087c4fb3b0fa24ed"
+    ]
+  },
+  "03ea5b3b09c80f84480755ed7724bb9b.unity3d": {
+    "md5": "03464bde860b071db33f61a0baf08da1",
+    "size": 12874,
+    "cat": "PROP_MESH",
+    "detail": "stake/post prop",
+    "assets": [
+      "CustomAssetBundle-03ea5b3b09c80f84480755ed7724bb9b"
+    ]
+  },
+  "2b50c1c30ed750a4c8bd7095c31d751a.unity3d": {
+    "md5": "c7d0f57796ebfc1db0c169425965d766",
+    "size": 1248,
+    "cat": "MATERIAL_STUB",
+    "detail": "material stub ~1.2KB",
+    "assets": [
+      "CustomAssetBundle-2b50c1c30ed750a4c8bd7095c31d751a"
+    ]
+  },
+  "2b918e6464c7a7a4b9cfeaef6d860462.unity3d": {
+    "md5": "77535ed793f570dfaf603cb0af0eecbc",
+    "size": 1025,
+    "cat": "MATERIAL_STUB",
+    "detail": "material stub ~1KB",
+    "assets": [
+      "CustomAssetBundle-2b918e6464c7a7a4b9cfeaef6d860462"
+    ]
+  },
+  "2ba40887b00016f4182c8dd0287e2c72.unity3d": {
+    "md5": "4a61a44139596ddd79d1412c23a36dc3",
+    "size": 2221,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_1_0",
+    "assets": [
+      "CustomAssetBundle-2ba40887b00016f4182c8dd0287e2c72"
+    ]
+  },
+  "2bbb1a59b6b750d4fb0284319f125e60.unity3d": {
+    "md5": "bdd04fe46e12ae38e64e01603450e388",
+    "size": 1559,
+    "cat": "PROP_MESH",
+    "detail": "MonoBehaviour",
+    "assets": [
+      "CustomAssetBundle-2bbb1a59b6b750d4fb0284319f125e60"
+    ]
+  },
+  "2c81c4684d026264fa42e83e03c6689e.unity3d": {
+    "md5": "dd88209969c9a3b4b60390d5f50c2b47",
+    "size": 5284232,
+    "cat": "CHAR_ANIM",
+    "detail": "HORSE full rig + animation clips (41MB decompressed)",
+    "assets": [
+      "CustomAssetBundle-2c81c4684d026264fa42e83e03c6689e"
+    ]
+  },
+  "2cbaa92e71984b245bac037b4da5db37.unity3d": {
+    "md5": "fca10d18379cf5c99cf7812a57dbce9e",
+    "size": 98282,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_8_5",
+    "assets": [
+      "CustomAssetBundle-2cbaa92e71984b245bac037b4da5db37"
+    ]
+  },
+  "2d801c6f8be8cba4db4f02e254ed5058.unity3d": {
+    "md5": "0e89c8a6be745797b6bd906304f51d0e",
+    "size": 174895,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_7_0",
+    "assets": [
+      "CustomAssetBundle-2d801c6f8be8cba4db4f02e254ed5058"
+    ]
+  },
+  "2dc8dd983bf86844db18965c76a404c2.unity3d": {
+    "md5": "d024d359197951fbf2d18c2e87f6a891",
+    "size": 1588,
+    "cat": "PROP_MESH",
+    "detail": "MonoBehaviour",
+    "assets": [
+      "CustomAssetBundle-2dc8dd983bf86844db18965c76a404c2"
+    ]
+  },
+  "2dc91653acf360a40ad00a9aef123927.unity3d": {
+    "md5": "f7c687ee60732e9be355e5814efda9a0",
+    "size": 25682,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_4_5",
+    "assets": [
+      "CustomAssetBundle-2dc91653acf360a40ad00a9aef123927"
+    ]
+  },
+  "2e305079fd3b90c48bc2c4e30809d027.unity3d": {
+    "md5": "6167182f2d9af5e6de646c47041979b9",
+    "size": 10056,
+    "cat": "PROP_MESH",
+    "detail": "world prop ~10KB",
+    "assets": [
+      "CustomAssetBundle-2e305079fd3b90c48bc2c4e30809d027"
+    ]
+  },
+  "2e7b5f20b28e2b54e9d1159b364ca568.unity3d": {
+    "md5": "cce361fa7995ac8ec0aec9609895722a",
+    "size": 20020,
+    "cat": "PROP_MESH",
+    "detail": "Pres_sale_clairseme_01",
+    "assets": [
+      "CustomAssetBundle-2e7b5f20b28e2b54e9d1159b364ca568"
+    ]
+  },
+  "2f3a462e45a7c4948999989de0253aa6.unity3d": {
+    "md5": "7607c80e4b379c4e6ffb7488f39fa543",
+    "size": 2963,
+    "cat": "PROP_MESH",
+    "detail": "Barriere_obstacle_cross_poteau_00",
+    "assets": [
+      "CustomAssetBundle-2f3a462e45a7c4948999989de0253aa6"
+    ]
+  },
+  "2fbeb84d71d9a95478aa7469beba922a.unity3d": {
+    "md5": "30c574f43b8d08a8a73eee5c7402ea4d",
+    "size": 471856,
+    "cat": "CHAR_ANIM",
+    "detail": "Palefrenier_Bip",
+    "assets": [
+      "CustomAssetBundle-2fbeb84d71d9a95478aa7469beba922a"
+    ]
+  },
+  "2fd500343cfb27746a3c4a37d9c14fc3.unity3d": {
+    "md5": "cdc3b87191ee411e807e0d19f4e001e8",
+    "size": 13514,
+    "cat": "PROP_MESH",
+    "detail": "world prop ~13KB",
+    "assets": [
+      "CustomAssetBundle-2fd500343cfb27746a3c4a37d9c14fc3"
+    ]
+  },
+  "2ff66ed87207fea48bbfbc71e4bf650a.unity3d": {
+    "md5": "7a400d35962102762e73a274bc552784",
+    "size": 348200,
+    "cat": "PROP_MESH",
+    "detail": "MainTex",
+    "assets": [
+      "CustomAssetBundle-2ff66ed87207fea48bbfbc71e4bf650a"
+    ]
+  },
+  "3b099967d371a8740ac78d6fde2acd2e.unity3d": {
+    "md5": "8f5fa36885477cfd3acc4a48e0ead6c5",
+    "size": 104672,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_2_6",
+    "assets": [
+      "CustomAssetBundle-3b099967d371a8740ac78d6fde2acd2e"
+    ]
+  },
+  "3c411c0377de86841ae7eb8d10b71c5e.unity3d": {
+    "md5": "ebd02f9f8a0ee0ab423326c0c1604540",
+    "size": 2044,
+    "cat": "PROP_MESH",
+    "detail": "MainTex",
+    "assets": [
+      "CustomAssetBundle-3c411c0377de86841ae7eb8d10b71c5e"
+    ]
+  },
+  "3c455f0af5b5f6843bd307bf68b5adf0.unity3d": {
+    "md5": "b52c2be0e43d2905cdadd16f97753f0a",
+    "size": 95820,
+    "cat": "TEXTURE",
+    "detail": "",
+    "assets": [
+      "CustomAssetBundle-3c455f0af5b5f6843bd307bf68b5adf0"
+    ]
+  },
+  "04bc26f6d9d97fe41b36b3f2c5d0825b.unity3d": {
+    "md5": "f85dca023e9f059b831478e4fa056492",
+    "size": 583674,
+    "cat": "CHAR_ANIM",
+    "detail": "Adulte_F full skeleton rig (female rider biped)",
+    "assets": [
+      "CustomAssetBundle-04bc26f6d9d97fe41b36b3f2c5d0825b"
+    ]
+  },
+  "04f006acd323ed642ae18374324e0590.unity3d": {
+    "md5": "a1fc2e1e22a6255b07bd3a592d5f2bf4",
+    "size": 17455,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_5_5",
+    "assets": [
+      "CustomAssetBundle-04f006acd323ed642ae18374324e0590"
+    ]
+  },
+  "3c979256562597947ac7be20be7106bf.unity3d": {
+    "md5": "c29cfeccd3dcbc127355a6c21d8e7f3a",
+    "size": 1670,
+    "cat": "PROP_MESH",
+    "detail": "Fountain_plane",
+    "assets": [
+      "CustomAssetBundle-3c979256562597947ac7be20be7106bf"
+    ]
+  },
+  "3cb1c9d367fa68e438d310fdb7f3441d.unity3d": {
+    "md5": "af20341dd6c9e966cf1649056445bcd0",
+    "size": 56819,
+    "cat": "TERRAIN_TEX",
+    "detail": "camargue_12_4",
+    "assets": [
+      "CustomAssetBundle-3cb1c9d367fa68e438d310fdb7f3441d"
+    ]
+  },
+  "3cfe2cac56078a64c9c14cf7113ba79b.unity3d": {
+    "md5": "b032c938402419e8aec596a65bbf07fe",
+    "size": 2359,
+    "cat": "VFX",
+    "detail": "CustomAssetBundle",
+    "assets": [
+      "CustomAssetBundle-3cfe2cac56078a64c9c14cf7113ba79b"
+    ]
+  },
+  "3d0f5b21fede31147b4b7d9128ec7930.unity3d": {
+    "md5": "3f05247ea627d3ffdf74fa778af807e5",
+    "size": 139372,
+    "cat": "TEXTURE",
+    "detail": "",
+    "assets": [
+      "CustomAssetBundle-3d0f5b21fede31147b4b7d9128ec7930"
+    ]
+  },
+  "3ddb755a19c328742a29532a9aaa48c4.unity3d": {
+    "md5": "8af142d65ccefa9b036241de187b99dc",
+    "size": 1015,
+    "cat": "MATERIAL_STUB",
+    "detail": "material stub ~1KB",
+    "assets": [
+      "CustomAssetBundle-3ddb755a19c328742a29532a9aaa48c4"
+    ]
+  },
+  "3df2b932a76773b45973d4fe905f328b.unity3d": {
+    "md5": "c994ceae1efab8b61ca5811d8e69ec2b",
+    "size": 68834,
+    "cat": "PROP_MESH",
+    "detail": "Object2214",
+    "assets": [
+      "CustomAssetBundle-3df2b932a76773b45973d4fe905f328b"
+    ]
+  },
+  "3e360179d261bab46ad11728b2d9c47a.unity3d": {
+    "md5": "2b52b86a19836f5e605ad12d959cce9b",
+    "size": 7687,
+    "cat": "VFX",
+    "detail": "CustomAssetBundle",
+    "assets": [
+      "CustomAssetBundle-3e360179d261bab46ad11728b2d9c47a"
+    ]
+  },
+  "3e8be2e7210cbce4ba40059e3ac8e39e.unity3d": {
+    "md5": "f79fc4ac1251bf28e5f9c0df9c7e70bb",
+    "size": 14154,
+    "cat": "CHAR_ANIM",
+    "detail": "Palefrenier + Vendeur1 NPC rigs (stable hand + vendor)",
+    "assets": [
+      "CustomAssetBundle-3e8be2e7210cbce4ba40059e3ac8e39e"
+    ]
+  },
+  "3ea5065e742e9d245b841eb20a4647d9.unity3d": {
+    "md5": "3c059b847f3b680ccd142c3316192ef3",
+    "size": 22244,
+    "cat": "PROP_MESH",
+    "detail": "Photographable",
+    "assets": [
+      "CustomAssetBundle-3ea5065e742e9d245b841eb20a4647d9"
+    ]
+  },
+  "3ec903a06d0654146b9dc20bb0119f28.unity3d": {
+    "md5": "26dc340630868114c1391f635d480d18",
+    "size": 125529,
+    "cat": "PROP_MESH",
+    "detail": "MainTex",
+    "assets": [
+      "CustomAssetBundle-3ec903a06d0654146b9dc20bb0119f28"
+    ]
+  },
+  "3ed484fa72c4abe479616cb66f4bd22e.unity3d": {
+    "md5": "3d0c4cb456a26a191516db3099907e34",
+    "size": 506048,
+    "cat": "CHAR_ANIM",
+    "detail": "NPC_PecheurVieux",
+    "assets": [
+      "CustomAssetBundle-3ed484fa72c4abe479616cb66f4bd22e"
+    ]
+  },
+  "3f017c01c51ed1d4196af9f115946067.unity3d": {
+    "md5": "66cf001061669968221e8fcc6d78341c",
+    "size": 1287113,
+    "cat": "WORLD_PROP",
+    "detail": "treetrunk / tree_trunk (large tree mesh + normal map)",
+    "assets": [
+      "CustomAssetBundle-3f017c01c51ed1d4196af9f115946067"
+    ]
+  },
+  "3f69468ae59661e47b0c1bff48201cef.unity3d": {
+    "md5": "b9d3f7745fe907a54a035b98be4f9e8e",
+    "size": 475707,
+    "cat": "CHAR_ANIM",
+    "detail": "NPC_Instructeur_1",
+    "assets": [
+      "CustomAssetBundle-3f69468ae59661e47b0c1bff48201cef"
+    ]
+  },
+  "3f87da2cc27619a4da5e2f544030b55c.unity3d": {
+    "md5": "6bd95396aed632d5349ecad52dab8278",
+    "size": 4618,
+    "cat": "PROP_MESH",
+    "detail": "Cylinder02",
+    "assets": [
+      "CustomAssetBundle-3f87da2cc27619a4da5e2f544030b55c"
+    ]
+  },
+  "3fc26e13069c9d6448bb165969c98742.unity3d": {
+    "md5": "1aab7e41b579b8fff722623c86d8dd58",
+    "size": 5969,
+    "cat": "PROP_MESH",
+    "detail": "Cylinder01",
+    "assets": [
+      "CustomAssetBundle-3fc26e13069c9d6448bb165969c98742"
+    ]
+  },
+  "3fe2243c229dbb7458b9b1a9baf8faf5.unity3d": {
+    "md5": "2e14a3925f2fda392baa8909035dabca",
+    "size": 2388,
+    "cat": "PROP_MESH",
+    "detail": "MonoBehaviour",
+    "assets": [
+      "CustomAssetBundle-3fe2243c229dbb7458b9b1a9baf8faf5"
+    ]
+  },
+  "4a4d20d75b0cae24caeff80392f7948f.unity3d": {
+    "md5": "56b154af5d3e0bda60b72bc2acb4226b",
+    "size": 901,
+    "cat": "MATERIAL_STUB",
+    "detail": "material stub ~900B",
+    "assets": [
+      "CustomAssetBundle-4a4d20d75b0cae24caeff80392f7948f"
+    ]
+  },
+  "4a5e6aa66f5985044985f68fcb63a704.unity3d": {
+    "md5": "552cb1fb351a92c9e7153f4f38d4acb6",
+    "size": 162518,
+    "cat": "AUDIO",
+    "detail": "monticule_D (terrain audio / ambient)",
+    "assets": [
+      "CustomAssetBundle-4a5e6aa66f5985044985f68fcb63a704"
+    ]
+  }
+}
