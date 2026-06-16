@@ -34,7 +34,7 @@ All three share the exact same XML schema. They were written to:
 ```
 Editor Default Resources/Build Infos/
 ```
-at runtime and deleted when the game closed, which is why they no longer exist on any recovered installation.
+at runtime and deleted when the game closed, which is why they no longer exist on any recovered installation. A minimal version of them was rebuilt and is accepted by the game, and properly served by the local server.
 
 ### .picf Format
 
@@ -198,6 +198,31 @@ grid_unit   = 512
 
 X and Y are the world position divided by 512. subX and subY are the sub-cell coordinates within that grid cell.
 
+### Known Shared Dependency Bundles
+
+These bundle names appear as `customassetbundle-X` dependency references inside decoded
+prop and character bundles. They are shared library bundles loaded early at startup and
+referenced by large numbers of individual prop bundles. They have not yet been found as
+standalone `.unity3d` files in the dataset.
+
+| Bundle name | Probable contents |
+|-------------|------------------|
+| `scripts` | Core MonoBehaviour scripts (SceneLauncher, Photographable, CollectableObject, shop logic, etc.) |
+| `shaders` | Main shared shader library |
+| `vegetation` | Shared vegetation materials and textures |
+| `buildings` | Shared building materials |
+| `mobilier` | Furniture and interior fixture materials |
+| `vehicules` | Vehicle materials and textures |
+| `clotures_murs` | Fence and wall shared materials |
+| `fxs` | Shared VFX and particle materials |
+| `terraintextures` | Shared terrain splat textures referenced by TERRAIN_TEX bundles |
+| `cso` | Course Sportive Obstacles - shared obstacle materials and scripts |
+| `109b3289...` | Unknown, referenced by both LD_Gabarit obstacle bundles with timing triggers |
+| `675fb414...` | Unknown, referenced by vegetation material stubs |
+| `73112f0e...` | Unknown, referenced by Grass_Lotier_02 and other grass props |
+| `fca32753...` | Unknown, referenced by sansouire_block_1 |
+| `d7c42031...` | Unknown, referenced by Rock 12 prop |
+
 ---
 
 ## World Content
@@ -222,6 +247,15 @@ Examples: `forest02_birds_midday04`, `forest01_river20`
 ```
 DLT_coll_<X>_<Y>_<subX>_<subY>_<index>
 ```
+
+### World Grid Extent (known so far)
+
+Bundle analysis has confirmed terrain texture packs for the following grid coordinates.
+The grid uses negative Y values, meaning the world extends below row 0.
+
+- X range confirmed: 0 to 18
+- Y range confirmed: -3 to 9
+- Negative Y confirmed at: X=12 (Y=-3), X=13 (Y=-3), X=15 (Y=-3)
 
 ---
 
@@ -250,13 +284,74 @@ From DLL string analysis, the full set of named bundle container IDs:
 | Asset | Size | Notes |
 |-------|------|-------|
 | Horse full rig + 61 animation clips | 5.3 MB | Complete locomotion system |
-| Female rider (Adulte_F) skeleton | 584 KB | Full biped with facial bones |
-| Palefrenier (stable hand) rig | 500 KB | NPC character |
-| NPC_PecheurVieux (old fisherman) | 506 KB | Named quest NPC |
+| Adulte_F full skeleton rig (female rider biped) | 584 KB | Full biped with facial bones |
+| Adulte_F skeleton/rig (secondary bundle) | 10 KB | Smaller companion rig bundle |
+| Adolescente full skeleton rig | 531 KB | Female teen biped; full finger, facial, and IK bones; includes HUD_Quete bone for quest indicator attachment |
+| Adolescente2 + Instructeur5 combined rig | 113 KB | Two meshes in one bundle; Instructeur5 has Alpha_Mesh LOD variant |
+| NPC_PecheurVieux (old fisherman) | 506 KB | Named quest NPC with full environment props |
 | NPC_Instructeur_1 (riding instructor) | 476 KB | Tutorial and quest NPC |
-| Vendor NPC stub | 14 KB | Paired with stable hand |
+| NPC_Instructeur_2 / Directeur | 497 KB | Full rig with animal controller; eyelid IK bones animated |
+| NPC_Adolescent_1 | 501 KB | Teen NPC with full rig and animal controller |
+| NPC_Gitan_2 (Romani NPC) | 460 KB | Has m_isPlayer and m_cameraMode fields, shares base class with player controller |
+| Palefrenier (stable NPC) | 500 KB | Stable hand NPC |
+| Palefrenier_Bip | 472 KB | Alternate Palefrenier rig |
+| Palefrenier + Vendeur1 stub | 14 KB | Paired stable hand and vendor rig stub |
+| Gitan2@MONTRER animation clip | 18 KB | Named show/present gesture for NPC_Gitan_2 |
+| Gitan2@TOURNER_GAUCHE animation clip | 13 KB | Named turn-left clip; also contains Directeur full bone path data |
+| Unnamed animation clip bundle | 18 KB | CompressedAnimationCurve format, no named rig |
 
 Horse animation clips include: `IDLE_RESPIRATION`, `PAS1_D` through `PAS3_D`, `TROT1_D` through `TROT3_D`, `GALOP1_D` through `GALOP3_D`, `GRAND_SAUT`, `PETIT_SAUT`, `AGGRESSIF`, `ENERVE_COUP_SABOT`, `SECOUER_TETE`, grooming poses, and more. 61 clips total.
+
+---
+
+## Gameplay Systems Inferred from Bundle Analysis
+
+These systems were identified from MonoBehaviour field names extracted during bundle
+decoding. They are inferences from field names, not recovered source code.
+
+### Shop and Item System
+
+A vendor MonoBehaviour found in the bundle dataset exposes the following fields:
+
+| Field | Type | Notes |
+|-------|------|-------|
+| `m_isSellingRiderCloth` | bool | Whether this vendor sells clothing |
+| `m_riderLevelMin` | int | Minimum rider level to purchase |
+| `m_horseLevelMin` | int | Minimum horse level to purchase |
+| `m_disposable` | bool | Whether the item is consumable |
+| `m_descriptionTextId` | string | Localization key for item description |
+| `m_textureName` | string | Item texture asset name |
+| `m_textureLowAssetBundleName` | string | Low-quality texture bundle for streaming |
+| `m_textureHighAssetBundleName` | string | High-quality texture bundle |
+| `m_iconTextureName` | string | HUD icon asset name |
+| `m_iconLowAssetBundleName` | string | Low-quality icon bundle |
+| `m_iconHighAssetBundleName` | string | High-quality icon bundle |
+
+The dual low/high bundle pair confirms a two-LOD streaming strategy for item assets. The level gating fields (`m_riderLevelMin`, `m_horseLevelMin`) confirm progression-locked shop inventory.
+
+### Collectable and Photography System
+
+Two distinct collectable MonoBehaviours have been found:
+
+**CollectableObject** - general pickup with `m_collectableObjectType` (typed enum, multiple categories) and `m_isHighlightEnabled` (visual proximity indicator). Uses a SphereCollider trigger.
+
+**Photographable** - landmark photography system with `m_photographableType` (typed enum). Confirmed on the aqueduct prop (~1.5 MB, largest single prop found). Players could photograph landmarks, likely for a quest or collection mechanic.
+
+### Scene Trigger System
+
+`SceneLauncher` objects in the open world load named interior scenes on proximity. Confirmed example: an object with `m_sceneName = "Sc_Ecurie"` triggers the stable interior load. This confirms the world uses additive scene streaming for interiors rather than baking them into the open world chunks.
+
+### Level Design Obstacle System
+
+LD obstacle bundles come in two variants:
+
+**Simple obstacles** (earlier format) - mesh only, no trigger volumes, named by physical dimensions (`LD_Gabarit_Obstacle_length_height_width`).
+
+**Triggered obstacles** (later format) - same naming, but contain two BoxCollider trigger volumes: `Trigger_Entree` (entry) and `Trigger_Sortie` (exit). These are the timing gates used to score obstacle performance. Both variants depend on the `cso` shared bundle (Course Sportive Obstacles, probable expansion).
+
+### Multiplayer Network System
+
+A `Network_RemoteHorseRiderMessageHandler` script bundle confirms the game had a live multiplayer system for syncing remote horse and rider state. The NPC_Gitan_2 character bundle contains an `m_isPlayer` boolean field on its AnimalController, confirming the player controller and NPC controller share the same base class. This is consistent with a system where remote players are rendered using the same controller as NPCs, differing only by the `m_isPlayer` flag.
 
 ---
 
@@ -280,12 +375,14 @@ This server is offline. Wayback Machine snapshots may have partial data.
 
 | Element | Status |
 |---------|--------|
-| Bundle analysis | Around 110 of roughly 1087 complete |
+| Bundle analysis | Around 210 of roughly 1087 complete |
 | `unityPath` values | Pattern known, full list incomplete |
-| Dependency graph | Partially mapped |
+| Dependency graph | Partially mapped; shared bundle names known, files not yet found |
 | Object GUIDs | Not yet extracted |
 | Minimap GUIDs and zoom values | Not yet extracted |
-| Full world grid dimensions | Partially known (columns 0-18, rows 0-8 so far) |
+| Full world grid dimensions | X: 0-18 confirmed, Y: -3 to 9 confirmed, full extent unknown |
+| Shop item definitions | Field structure known, actual item data not recovered |
+| Collectable type enum values | Type system confirmed, enum values not recovered |
 
 ---
 
