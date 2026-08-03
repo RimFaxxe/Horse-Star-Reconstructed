@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClientConfiguration>
+  <useSettings>false</useSettings>
+  <useNetwork>true</useNetwork>
+  <useOnline>true</useOnline>
+  <useAssetBundle>true</useAssetBundle>
+  <mapSize>1024</mapSize>
+  <displayDebugGUI>false</displayDebugGUI>
+  <serverAddress>127.0.0.1</serverAddress>
+  <dxDiagAddress>127.0.0.1</dxDiagAddress>
+  <StudServerName>127.0.0.1</StudServerName>
+  <RdvIP>127.0.0.1</RdvIP>
+  <RdvPort>15250</RdvPort>
+  <ClientIP>127.0.0.1</ClientIP>
+  <ClientPort>3001</ClientPort>
+  <ZoneSize>512</ZoneSize>
+  <SynchronizeRemotePlayersTimePeriod>100</SynchronizeRemotePlayersTimePeriod>
+  <SynchronousRequestsMaxAttemps>3</SynchronousRequestsMaxAttemps>
+  <SynchronousRequestsMaxWaitingTimeMs>5000</SynchronousRequestsMaxWaitingTimeMs>
+  <LoginMaxAttemps>3</LoginMaxAttemps>
+</ClientConfiguration>
