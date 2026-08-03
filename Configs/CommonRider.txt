@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RiderCommonModel>
+  <m_levelMax>1</m_levelMax>
+  <m_riderXPConstant>1</m_riderXPConstant>
+  <m_riderConstant>1</m_riderConstant>
+  <m_riderXP>1</m_riderXP>
+  <m_classicConstant>1</m_classicConstant>
+  <m_classicXP>1</m_classicXP>
+  <m_trainingBonus>1</m_trainingBonus>
+  <m_trainingXP>1</m_trainingXP>
+  <m_percentXpOfAlreadyFinishedQuest>0</m_percentXpOfAlreadyFinishedQuest>
+  <m_levelDescriptions>
+    <RiderLevelDescription>
+      <m_level>1</m_level>
+      <m_km>0</m_km>
+      <m_items />
+      <m_givenItems />
+      <m_stars>0</m_stars>
+      <m_horseRewards />
+    </RiderLevelDescription>
+  </m_levelDescriptions>
+</RiderCommonModel>

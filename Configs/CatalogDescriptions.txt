@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatalogXml>
+  <m_catalogCategories>
+    <CatalogCategory>
+      <m_categoryName>Default</m_categoryName>
+      <m_items />
+    </CatalogCategory>
+  </m_catalogCategories>
+</CatalogXml>

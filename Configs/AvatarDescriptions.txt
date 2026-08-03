@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AvatarDescriptionsXml>
+  <m_avatarDescriptions>
+    <AvatarDescription>
+      <m_riderPrefabPath>Rider</m_riderPrefabPath>
+      <m_defaultEquippedItemIds />
+      <m_defaultItemIds />
+      <m_defaultBrasSkinItemIds />
+      <m_defaultMolletsSkinItemIds />
+      <m_defaultVisageSkinItemIds />
+      <m_defaultYeuxItemIds />
+      <m_defaultCheveuxItemIds />
+      <m_teteCategory>Tete</m_teteCategory>
+      <m_cheveuxCategory>Cheveux</m_cheveuxCategory>
+      <m_visageCategory>Visage</m_visageCategory>
+      <m_yeuxCategory>Yeux</m_yeuxCategory>
+      <m_busteCategory>Buste</m_busteCategory>
+      <m_brasCategory>Bras</m_brasCategory>
+      <m_mainsCategory>Mains</m_mainsCategory>
+      <m_jambesCategory>Jambes</m_jambesCategory>
+      <m_molletsCategory>Mollets</m_molletsCategory>
+      <m_piedsCategory>Pieds</m_piedsCategory>
+      <m_defaultAvatarPosition>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </m_defaultAvatarPosition>
+      <m_defaultAvatarRotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <w>1</w>
+      </m_defaultAvatarRotation>
+      <m_defaultHorseModels>
+        <HorseModel>
+          <m_uid>00000000-0000-0000-0000-000000000001</m_uid>
+          <m_name>Default Horse</m_name>
+          <m_race>AkhalTeke</m_race>
+          <m_level>1</m_level>
+          <m_gender>FEMALE</m_gender>
+          <m_health>100</m_health>
+          <m_energy>100</m_energy>
+          <m_satisfaction>100</m_satisfaction>
+          <m_equippedItemIds />
+          <m_totalDistance>0</m_totalDistance>
+          <m_levelDistance>0</m_levelDistance>
+          <m_totalDistanceSinceGrooming>0</m_totalDistanceSinceGrooming>
+          <m_levelElapsedTime>0</m_levelElapsedTime>
+          <m_totalElapsedTime>0</m_totalElapsedTime>
+          <m_savedDatas>
+            <m_filePath></m_filePath>
+            <m_hasSavedData>false</m_hasSavedData>
+            <m_currycombFinish>false</m_currycombFinish>
+            <m_brushFinish>false</m_brushFinish>
+            <m_waterFinish>false</m_waterFinish>
+            <m_combFinish>false</m_combFinish>
+            <m_hoofpickFinish>false</m_hoofpickFinish>
+            <m_whiskFinish>false</m_whiskFinish>
+            <m_currycombAvailable>true</m_currycombAvailable>
+            <m_brushAvailable>true</m_brushAvailable>
+            <m_waterAvailable>true</m_waterAvailable>
+            <m_combAvailable>true</m_combAvailable>
+            <m_hoofpickAvailable>true</m_hoofpickAvailable>
+            <m_whiskAvailable>true</m_whiskAvailable>
+            <m_currycombInUse>false</m_currycombInUse>
+            <m_brushInUse>false</m_brushInUse>
+            <m_waterInUse>false</m_waterInUse>
+            <m_combInUse>false</m_combInUse>
+            <m_hoofpickInUse>false</m_hoofpickInUse>
+            <m_whiskInUse>false</m_whiskInUse>
+            <m_hasDirtyTexture>false</m_hasDirtyTexture>
+            <m_hasBrushTexture>false</m_hasBrushTexture>
+            <m_hasWaterTexture>false</m_hasWaterTexture>
+            <m_dirtyTextureIDName></m_dirtyTextureIDName>
+            <m_brushTextureIDName></m_brushTextureIDName>
+            <m_waterTextureIDName></m_waterTextureIDName>
+            <m_byteSize>0</m_byteSize>
+          </m_savedDatas>
+          <m_horseXPs />
+          <m_horseXPTotal />
+          <m_equippedItems />
+        </HorseModel>
+      </m_defaultHorseModels>
+    </AvatarDescription>
+  </m_avatarDescriptions>
+</AvatarDescriptionsXml>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DressDescriptionsXml>
+  <m_dressDescriptions>
+    <DressDescriptionXml>
+      <m_dressName>Default</m_dressName>
+      <m_dressNameToString>Default</m_dressNameToString>
+      <m_dirtyType>None</m_dirtyType>
+      <m_avatarPic></m_avatarPic>
+    </DressDescriptionXml>
+  </m_dressDescriptions>
+</DressDescriptionsXml>

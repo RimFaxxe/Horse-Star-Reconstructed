@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DialogXml>
+  <message id="HorseStar|Quest|System|MainMenu|VersionTitle" message="Version" />
+  <message id="HorseStar|Quest|System|MainMenu|VersionValue" message="1.0.0" />
+  <message id="HorseStar|Quest|System|MainMenu|LangueTitle" message="Language" />
+  <message id="HorseStar|Quest|System|MainMenu|LangueValue" message="English" />
+  <message id="HorseStar|Quest|System|MainMenu|RegionTitle" message="Region" />
+  <message id="HorseStar|Quest|System|MainMenu|RegionValue" message="International" />
+  <message id="HorseStar|Quest|System|MainMenu|Launch" message="Play" />
+  <message id="HorseStar|Quest|System|MainMenu|Configuration" message="Configuration" />
+  <message id="HorseStar|Quest|System|MainMenu|Country" message="Country" />
+  <message id="HorseStar|Quest|System|MainMenu|Forum" message="Forum" />
+  <message id="HorseStar|Quest|System|MainMenu|Link_blog" message="Blog" />
+  <message id="HorseStar|Quest|System|MainMenu|Link_forum" message="Forum" />
+  <message id="HorseStar|Quest|System|MainMenu|SiteWeb" message="Website" />
+  <message id="HorseStar|Quest|System|MainMenu|Support" message="Support" />
+  <message id="HorseStar|Quest|System|MainMenu|LoginConnect" message="Login" />
+  <message id="HorseStar|Quest|System|MainMenu|LoginIdent" message="Username" />
+  <message id="HorseStar|Quest|System|MainMenu|LoginPassword" message="Password" />
+  <message id="HorseStar|Quest|System|UpdateVersion|UpdateMessage" message="A new update is available." />
+  <message id="HorseStar|Quest|System|ConditionsGenerales|Accepter" message="Accept" />
+  <message id="HorseStar|Quest|System|ConditionsGenerales|Annuler" message="Cancel" />
+  <message id="HorseStar|Quest|System|ConditionsGenerales|CGU_Title" message="Terms of Use" />
+  <message id="HorseStar|Quest|System|ConditionsGenerales|ConditionsGenerales" message="Terms and Conditions" />
+  <message id="HorseStar|Quest|System|Ecurie|Courage" message="Courage" />
+  <message id="HorseStar|Quest|System|Ecurie|Docilite" message="Docility" />
+  <message id="HorseStar|Quest|System|Ecurie|Equipement" message="Equipment" />
+  <message id="HorseStar|Quest|System|Ecurie|Exit" message="Exit" />
+  <message id="HorseStar|Quest|System|Ecurie|Fiche" message="Profile" />
+  <message id="HorseStar|Quest|System|Ecurie|Level" message="Level" />
+  <message id="HorseStar|Quest|System|Ecurie|Pansage" message="Grooming" />
+  <message id="HorseStar|Quest|System|Pansage|Brosse" message="Brush" />
+  <message id="HorseStar|Quest|System|Pansage|Epoussette" message="Duster" />
+  <message id="HorseStar|Quest|System|Pansage|Etrille" message="Curry Comb" />
+  <message id="HorseStar|Quest|System|Pansage|EtrilleBrosse_Moitie" message="Half Done" />
+  <message id="HorseStar|Quest|System|Pansage|Fin" message="Done" />
+  <message id="HorseStar|Quest|System|Pansage|JetEau" message="Water Jet" />
+  <message id="HorseStar|Quest|System|Pansage|Lancement" message="Start" />
+  <message id="HorseStar|Quest|System|Pansage|Outil_Bien" message="Good Tool" />
+  <message id="HorseStar|Quest|System|Pansage|Outil_Fin" message="Tool Done" />
+  <message id="HorseStar|Quest|System|Pansage|Outil_Mal" message="Wrong Tool" />
+  <message id="HorseStar|Quest|System|Pansage|Peigne" message="Comb" />
+  <message id="HorseStar|Quest|System|Quit|quit" message="Quit" />
+  <message id="HorseStar|Quest|Common|No" message="No" />
+  <message id="HorseStar|Quest|Common|Yes" message="Yes" />
+  <message id="HorseStar|Quest|EliminationParcours|3Refus-b" message="3 Refusals" />
+  <message id="HorseStar|Quest|EliminationParcours|45sec-b" message="45 Seconds" />
+  <message id="HorseStar|Quest|EliminationParcours|Elimination" message="Elimination" />
+  <message id="HorseStar|Quest|EliminationParcours|Elimination_obstacles" message="Obstacle Elimination" />
+  <message id="HorseStar|Quest|EliminationParcours|MauvaisObs-b" message="Wrong Obstacle" />
+  <message id="HorseStar|Quest|EliminationParcours|MauvaisSens-b" message="Wrong Direction" />
+  <message id="HorseStar|Quest|EliminationParcours|TempsLimite-b" message="Time Limit" />
+  <message id="HorseStar|Quest|CM|Q00004_Taureaux" message="Bulls" />
+  <message id="HorseStar|Quest|CM|Q00018_Photo0" message="Photo" />
+  <message id="HorseStar|HUD|AvatarCreation|CreationButton" message="Create" />
+  <message id="HorseStar|HUD|AvatarCreation|DeleteButton" message="Delete" />
+  <message id="HorseStar|HUD|AvatarCreation|DeleteConfirmation" message="Are you sure?" />
+  <message id="HorseStar|HUD|AvatarCreation|EyesDescription" message="Eyes" />
+  <message id="HorseStar|HUD|AvatarCreation|GenderDescription" message="Gender" />
+  <message id="HorseStar|HUD|AvatarCreation|HairDescription" message="Hair" />
+  <message id="HorseStar|HUD|AvatarCreation|RiderNameDescription" message="Rider Name" />
+  <message id="HorseStar|HUD|AvatarCreation|SkinDescription" message="Skin" />
+  <message id="HorseStar|HUD|HorseCreation|GenderDescription" message="Gender" />
+  <message id="HorseStar|HUD|HorseCreation|HorseNameDescription" message="Horse Name" />
+  <message id="HorseStar|HUD|HorseCreation|RaceDescription" message="Breed" />
+  <message id="HorseStar|HUD|HorseCreation|RobeDescription" message="Coat" />
+  <message id="HorseStar|HUD|Controls|ActionTitle" message="Actions" />
+  <message id="HorseStar|HUD|Controls|AllureAcceleree" message="Speed Up" />
+  <message id="HorseStar|HUD|Controls|ConfortConfigTitle" message="Comfort Config" />
+  <message id="HorseStar|HUD|Controls|DefaultConfigTitle" message="Default Config" />
+  <message id="HorseStar|HUD|Controls|HUDTitle" message="HUD" />
+  <message id="HorseStar|HUD|Controls|PersoConfigTitle" message="Custom Config" />
+  <message id="HorseStar|HUD|Controls|Sauter" message="Jump" />
+  <message id="HorseStar|HUD|Error|BadPassword" message="Incorrect password" />
+  <message id="HorseStar|HUD|Error|NotFound" message="Account not found" />
+  <message id="HorseStar|HUD|Options|ConfirmRes" message="Confirm Resolution" />
+  <message id="HorseStar|HUD|Options|FullscreenModeLabel" message="Fullscreen" />
+  <message id="HorseStar|HUD|Options|QualityLevelLabel" message="Quality" />
+  <message id="HorseStar|HUD|Options|ResLevelLabel" message="Resolution" />
+  <message id="HorseStar|HUD|Options|RotateMinimapLabel" message="Rotate Minimap" />
+  <message id="HorseStar|HUD|Options|Title" message="Options" />
+  <message id="HorseStar|HUD|Options|fullscreen" message="Fullscreen" />
+  <message id="HorseStar|HUD|Options|highQuality" message="High" />
+  <message id="HorseStar|HUD|Options|lowQuality" message="Low" />
+  <message id="HorseStar|HUD|Options|mediumQuality" message="Medium" />
+  <message id="HorseStar|HUD|Options|windowed" message="Windowed" />
+  <message id="HorseStar|HUD|QuitMultiple|CancelInstance" message="Cancel" />
+  <message id="HorseStar|HUD|QuitMultiple|NoInstance" message="No" />
+  <message id="HorseStar|HUD|QuitMultiple|QuitGame" message="Quit Game" />
+  <message id="HorseStar|HUD|QuitMultiple|QuitInstance" message="Quit Instance" />
+  <message id="HorseStar|HUD|QuitMultiple|YesInstance" message="Yes" />
+  <message id="HorseStar|HUD|Shop|Achat" message="Purchase" />
+  <message id="HorseStar|HUD|Shop|AchatDeja" message="Already Purchased" />
+  <message id="HorseStar|HUD|Shop|AchatPasStar" message="Not Enough Stars" />
+  <message id="HorseStar|HUD|Shop|AchatPlein" message="Inventory Full" />
+  <message id="HorseStar|HUD|Shop|Vente" message="Sell" />
+  <message id="HorseStar|HUD|Shop|VenteImpossible" message="Cannot Sell" />
+  <message id="HorseStar|HUD|Info|Caracteristiques" message="Characteristics" />
+  <message id="HorseStar|HUD|Info|ChevauxNombre" message="Number of Horses" />
+  <message id="HorseStar|HUD|Info|Credits" message="Credits" />
+  <message id="HorseStar|HUD|Info|DistanceKm" message="Distance (km)" />
+  <message id="HorseStar|HUD|Info|DistancePansage" message="Grooming Distance" />
+  <message id="HorseStar|HUD|Info|DistanceTotale" message="Total Distance" />
+  <message id="HorseStar|HUD|Info|InfoNiveau" message="Level Info" />
+  <message id="HorseStar|HUD|Info|ItemCavalier" message="Rider Item" />
+  <message id="HorseStar|HUD|Info|ItemCheval" message="Horse Item" />
+  <message id="HorseStar|HUD|Info|NiveauMax" message="Max Level" />
+  <message id="HorseStar|HUD|Info|Objets" message="Items" />
+  <message id="HorseStar|HUD|Info|Quete" message="Quest" />
+  <message id="HorseStar|HUD|Info|QueteCours" message="Quests In Progress" />
+  <message id="HorseStar|HUD|Info|QueteNiveau" message="Quest Level" />
+  <message id="HorseStar|HUD|Info|QueteTotal" message="Total Quests" />
+  <message id="HorseStar|HUD|Info|Quete_Deplacement" message="Travel Quest" />
+  <message id="HorseStar|HUD|Info|Quete_Entrainement" message="Training Quest" />
+  <message id="HorseStar|HUD|Info|RangMax" message="Max Rank" />
+  <message id="HorseStar|HUD|Info|Recompense" message="Reward" />
+  <message id="HorseStar|HUD|Info|Stars" message="Stars" />
+  <message id="HorseStar|HUD|Info|TempsH" message="h" />
+  <message id="HorseStar|HUD|Info|TempsJ" message="d" />
+  <message id="HorseStar|HUD|Info|TempsJeu" message="Play Time" />
+  <message id="HorseStar|HUD|Info|TempsM" message="m" />
+  <message id="HorseStar|HUD|Info|TempsS" message="s" />
+  <message id="HorseStar|HUD|Info|XPcavalier" message="Rider XP" />
+  <message id="HorseStar|HUD|Info|XPcheval" message="Horse XP" />
+  <message id="HorseStar|HUD|Info|XPniveau" message="Level XP" />
+  <message id="HorseStar|HUD|Info|XPtotal" message="Total XP" />
+  <message id="HorseStar|HUD|Catalogue|Acheter" message="Buy" />
+  <message id="HorseStar|HUD|Catalogue|Annuler" message="Cancel" />
+  <message id="HorseStar|HUD|Catalogue|Catalogue" message="Catalogue" />
+  <message id="HorseStar|HUD|Catalogue|Confirmation" message="Confirmation" />
+  <message id="HorseStar|HUD|Catalogue|Confirmation_achat" message="Confirm Purchase" />
+  <message id="HorseStar|HUD|Catalogue|Confirmer" message="Confirm" />
+  <message id="HorseStar|HUD|Catalogue|Credits" message="Credits" />
+  <message id="HorseStar|HUD|Catalogue|Credits_actuels" message="Current Credits" />
+  <message id="HorseStar|HUD|Catalogue|Credits_restants" message="Remaining Credits" />
+  <message id="HorseStar|HUD|Catalogue|Pas_Credits" message="Not Enough Credits" />
+  <message id="HorseStar|HUD|Carnet|PageCavalier|Distance" message="Distance" />
+  <message id="HorseStar|HUD|Carnet|PageCheval|Distance" message="Distance" />
+  <message id="HorseStar|HUD|Carnet|PageCheval|Rang" message="Rank" />
+  <message id="HorseStar|POI_names|POI_plage_orestan" message="Orestan Beach" />
+  <message id="HorseStar|HUD|Info|" message="" />
+  <message id="HorseStar|HUD|CategoryItem|" message="" />
+  <message id="HorseStar|HUD|KeyCode|" message="" />
+  <message id="HorseStar|Item|Temp|" message="" />
+  <message id="HorseStar|Quest|System|MainMenu_News" message="Welcome to Horse Star!" />
+</DialogXml>
