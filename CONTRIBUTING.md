@@ -13,7 +13,7 @@ The current milestone is fully reverse-engineering the **OUDP protocol** used by
 
 ### 2. Testing & Game Assets
 * We need to test the local asset server with different game clients. If you have different versions of the Horse Star client, please let us know.
-* Help us populate the `/bundles`, `/config`, and `/build_infos` folders with verified files to test if the client pulls them correctly.
+* Help us populate the `/Data`, `/Configs`, and `/Build_Infos` folders with verified files to test if the client pulls them correctly.
 
 ## Getting Started
 1. **Check the Issues tab**: Look for issues tagged with `good first issue` or `help wanted`.
