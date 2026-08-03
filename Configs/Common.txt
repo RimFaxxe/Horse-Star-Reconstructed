@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorseCommonModel>
+  <m_levelMax>1</m_levelMax>
+  <m_endurance>1</m_endurance>
+  <m_jump>1</m_jump>
+  <m_speed>1</m_speed>
+  <m_trot>1</m_trot>
+  <m_galop>1</m_galop>
+  <m_jumpHeightPas>1</m_jumpHeightPas>
+  <m_jumpHeightPasQuick>1</m_jumpHeightPasQuick>
+  <m_jumpHeightTrotSlow>1</m_jumpHeightTrotSlow>
+  <m_jumpHeightTrot>1</m_jumpHeightTrot>
+  <m_jumpHeightTrotQuick>1</m_jumpHeightTrotQuick>
+  <m_jumpHeightGalopSlow>1</m_jumpHeightGalopSlow>
+  <m_jumpHeightGalop>1</m_jumpHeightGalop>
+  <m_jumpHeightGalopSprint>1</m_jumpHeightGalopSprint>
+  <m_speedBack>1</m_speedBack>
+  <m_speedStop>0</m_speedStop>
+  <m_speedPas>1</m_speedPas>
+  <m_speedPasQuick>1</m_speedPasQuick>
+  <m_speedTrotSlow>1</m_speedTrotSlow>
+  <m_speedTrot>1</m_speedTrot>
+  <m_speedTrotQuick>1</m_speedTrotQuick>
+  <m_speedGalopSlow>1</m_speedGalopSlow>
+  <m_speedGalop>1</m_speedGalop>
+  <m_speedGalopSprint>1</m_speedGalopSprint>
+  <m_energyRecoveryBack>1</m_energyRecoveryBack>
+  <m_energyRecoveryStop>1</m_energyRecoveryStop>
+  <m_energyRecoveryPas>1</m_energyRecoveryPas>
+  <m_energyRecoveryPasQuick>1</m_energyRecoveryPasQuick>
+  <m_energyRecoveryTrotSlow>1</m_energyRecoveryTrotSlow>
+  <m_energyRecoveryTrot>1</m_energyRecoveryTrot>
+  <m_energyRecoveryTrotQuick>1</m_energyRecoveryTrotQuick>
+  <m_energyRecoveryGalopSlow>1</m_energyRecoveryGalopSlow>
+  <m_energyRecoveryGalop>1</m_energyRecoveryGalop>
+  <m_energyRecoveryGalopSprint>1</m_energyRecoveryGalopSprint>
+  <m_exhaustionBack>1</m_exhaustionBack>
+  <m_exhaustionStop>1</m_exhaustionStop>
+  <m_exhaustionPas>1</m_exhaustionPas>
+  <m_exhaustionPasQuick>1</m_exhaustionPasQuick>
+  <m_exhaustionTrotSlow>1</m_exhaustionTrotSlow>
+  <m_exhaustionTrot>1</m_exhaustionTrot>
+  <m_exhaustionTrotQuick>1</m_exhaustionTrotQuick>
+  <m_exhaustionGalopSlow>1</m_exhaustionGalopSlow>
+  <m_exhaustionGalop>1</m_exhaustionGalop>
+  <m_exhaustionGalopSprint>1</m_exhaustionGalopSprint>
+  <m_horseLevelDescriptions>
+    <HorseLevelDescription>
+      <m_level>1</m_level>
+      <m_km>0</m_km>
+      <m_horseXPs />
+      <m_items />
+      <m_givenItems />
+      <m_stars>0</m_stars>
+      <m_horseRewards />
+    </HorseLevelDescription>
+  </m_horseLevelDescriptions>
+</HorseCommonModel>
