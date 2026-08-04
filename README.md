@@ -13,12 +13,13 @@ For context on the game itself, check out the [TMQ Horse Game Database wiki page
 * Stand up a precise private server based entirely on client-side data.
 
 ## What's working so far
-We have broken past the initial black box stage and mapped out a solid chunk of the engine:
-* **Schemas and Compression:** Pulled the full XML schema out of `Assembly-CSharp.dll` and confirmed `.picf` is just standard zlib (`Ionic.Zlib`).
-* **World Mechanics:** Mapped the asset bundle containers and cracked the world streaming system, which uses a `camargue_X_Y_subX_subY` grid with 512-unit cells. Chunks are handled via geometry plus texture bundle pairings.
-* **Assets and Logic:** Verified that quest scenes still hold full geometry and gameplay scripts. Standard scenes like login, character creation, stables, and grooming are fully identified.
-* **Rigs and Renders:** Recovered NPC rigs for the instructor, stable hand, fisherman, and vendor. We also have the full horse animation rig featuring 61 named clips.
-* **Progress:** Deep-dived and analyzed roughly 110 out of 1,087 total asset bundles, though all 1,087 were fully extracted.
+Some progress has been made in understanding how the client behaves:
+
+* **Schemas and Compression:** XML schemas are present in `Assembly-CSharp.dll`, and `.picf` files appear to use zlib compression (`Ionic.Zlib`).
+* **World Mechanics:** The world seems to be divided into asset bundle chunks using a `camargue_X_Y_subX_subY` naming pattern, likely representing a grid system (possibly 512-unit cells). These appear to be split into geometry and texture bundles.
+* **Assets and Logic:** Several scenes (login, character creation, stables, grooming) are identifiable and still contain geometry and scripts.
+* **Rigs and Renders:** NPC rigs (instructor, stable hand, etc.) and a horse animation rig with ~60 clips are present in the data.
+* **Progress:** Around 110 out of ~1,087 asset bundles have been looked at in more detail, though all bundles have been extracted.
 
 ## The Todo List
 * Parse and analyze the remaining 977 asset bundles.
