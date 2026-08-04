@@ -2,7 +2,7 @@
 
 A reverse engineering and preservation project for the 2010 MMO *Horse Star*. 
 
-The game never left beta and was killed off alongside *Mission Equitation Online*. While the official servers and source code are entirely lost, we have partially recoverable client data. This repo is dedicated to documenting and tearing down the game's internal data structures to figure out how it worked and eventually get it running again.
+The game never left beta and was killed off alongside *Mission Equitation Online*. While the official servers and source code are entirely lost, we have partially recoverable client data. This repo is dedicated to documenting what can be recovered from the client and trying to understand how the game worked, with the long-term goal of eventually getting it running again as a fully functioning private server.
 
 For context on the game itself, check out the [TMQ Horse Game Database wiki page]([https://miraheze.org](https://horsegamedatabase.miraheze.org/wiki/Horse_Star).
 
