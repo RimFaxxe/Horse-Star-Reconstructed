@@ -46,5 +46,13 @@ data/           Processed bundle metadata and reference catalogs
 docs/findings/  Documented research, reverse engineering notes, and system analysis
 ```
 
+## Current blocker
+
+Client crashes on login because rdvIP is null:
+
+System.Net.IPAddress.Parse(ipString)
+
+I suspect config/init issue but not sure where rdvIP is supposed to be set. Any help tracing this would be appreciated.
+
 *(Note: This is a pure preservation project. We do not distribute original game assets, nor do we possess original server code. All reverse engineering is built entirely out of client-side data. Original game developed by Punchers Impact and published by Mindscape in 2010. See LICENSE for details.)*
 
